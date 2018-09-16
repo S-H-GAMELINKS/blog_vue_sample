@@ -1,11 +1,12 @@
-import Vue from 'vue'
-import App from '../app.vue'
+import Vue from 'vue/dist/vue.esm'
+import Index from './components/topics/index.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const el = document.body.appendChild(document.createElement('hello'))
   const app = new Vue({
-    el,
-    render: h => h(App)
+    el: '#topics',
+    components: {
+      'topic-index': Index,
+    }
   })
 
   console.log(app)
