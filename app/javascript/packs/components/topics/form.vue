@@ -1,5 +1,7 @@
 <template>
 <div>
+    <input v-model="title" class="form-control" placeholder="Add your topic!!">
+    <input v-model="content" class="form-control" placeholder="Add your content!!">
     <a class="waves-effect waves-light btn" v-on:click="postTopics">button</a>
 </div>
 </template>
@@ -10,7 +12,7 @@ import axios from 'axios'
 export default {
     data: function() {
         return {
-            title: "post test",
+            title: "",
             content: "post test in form"
         }
     },
