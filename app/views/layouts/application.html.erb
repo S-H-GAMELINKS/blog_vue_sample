@@ -10,6 +10,15 @@
   </head>
 
   <body>
+
+    <div id="application">
+      <header>
+        <layout-header/>
+      </header>
+    </div>
+
+    <%= javascript_pack_tag 'application' %>
+    
     <%= yield %>
   </body>
 </html>
